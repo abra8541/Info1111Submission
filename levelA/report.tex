@@ -1,0 +1,198 @@
+\documentclass[a4paper, 11pt]{report}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{fix-cm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{titlesec}
+
+\usepackage[english]{babel}
+
+\geometry{ margin=30mm }
+\counterwithin{subsection}{section}
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}.}
+\usepackage{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftsecindent}{2.2em}
+\setlength{\cftsubsecindent}{4.2em}
+\setlength{\cftsecnumwidth}{2em}
+\setlength{\cftsubsecnumwidth}{2.5em}
+
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\begin{document}
+\titleformat{\section}
+{\normalfont\fontsize{15}{0}\bfseries}{\thesection}{1em}{}
+\titlespacing{\section}{0cm}{0.5cm}{0.15cm}
+\titleformat{\subsection}
+{\normalfont\fontsize{13}{0}\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing{\section}{0cm}{0.5cm}{0.15cm}
+
+%=============================================================================
+
+\pagenumbering{Alph}
+\begin{titlepage}
+\begin{flushright}
+\includegraphics[width=4cm]{USyd}\\[2cm]
+\end{flushright}
+\center 
+\textbf{\huge INFO1111: Computing 1A Professionalism}\\[0.75cm]
+\textbf{\huge 2023 Semester 1}\\[2cm]
+\textbf{\huge Self-Learning Report}\\[3cm]
+
+\textbf{\huge Submission number: 1}\\[0.75cm]
+\textbf{Github link: https://github.com/abra8541/Info1111Submission.git}\\[2cm]
+
+{\large
+\begin{tabular}{|p{0.35\textwidth}|p{0.55\textwidth}|}
+	\hline
+	{\bf Student name} & Ameek Brar\\
+	{\bf Student ID} & 530471181\\
+	{\bf Topic} & Javascript\\
+	{\bf Levels already achieved} & None\\
+	{\bf Levels in this report} & Level A\\
+	\hline
+\end{tabular}
+}
+\thispagestyle{empty}
+\end{titlepage}
+\pagenumbering{arabic}
+
+
+%=============================================================================
+
+\tableofcontents
+
+%=============================================================================
+
+\newpage
+\section*{Instructions}
+
+\textbf{Important}: This section should be removed prior to submission.
+
+You should use this \LaTeX\ template to generate your self-learning report. Keep in mind the following key points:
+\begin{itemize}
+	\item \textbf{Submissions}: There will be three opportunities during the semester to submit this report. For each submission you can attempt 1 or 2 levels. Each submission should use the same report, but amended to include new information.
+	\item \textbf{Assessment}: In order to achieve level B, you must first have achieved level A, and so on for each level up to level D. This means that we will not assess a higher level until a lower level has been achieved (though we will review one level higher and give you feedback to help you in refining your work).
+	\item \textbf{Minimum requirement}: Remember that in order to pass the unit, you must achieve at least level A in the self-learning (unless you achieve level B in both the skills and knowledge categories).
+	\item \textbf{Using this template}: When completing each section you should remove the explanation text and replace it with your material.
+	\item \textbf{Referencing}: You should also ensure that any resources you use are suitably referenced, and references are included into the reference list at the end of this document. You should use the IEEE reference style \cite{usyd2} (the reference included here shows you how this can be easily achieved).
+\end{itemize}
+
+
+%=============================================================================
+
+
+\newpage
+\section{Level A: Initial Understanding}
+\vspace{5mm}
+\subsection{Level A Demonstration}
+1. Understand how JavaScript works with HTML to produce a web page myself and embed a JS file  \\ 2. Understand and recreate basic functions such as alert, console.log, and document.write \\ 3. Create a multi-layer interactive calculator using a base of JavaScript and implement it into a web page using HTML and CSS.
+
+\subsection{Learning Approach}
+Being a beginner in JavaScript, I began my journey in understanding the new language by reading basic summary articles as to what JavaScript is and its role in technological development.  This helped build my base knowledge as to "Why JavaScript is important?." From that point, I watched YouTube tutorials on understanding key parts of JavaScript such as outputting code into an HTML web page, as well as developing the correct syntactical method of writing the code. Since the process of learning to code is project-based, I tried to recreate code from YouTube tutorials myself in a JavaScript file. (In my case it was my Hello world page). This process allowed me to develop my ability to make simple lines of code correctly following required syntax and function rules. Continuing on I watched more tutorials and free online programs from learning platforms to challenge myself further and gain in-depth knowledge. Other approaches to learning involved speaking to family relatives who have learnt the language and asking them about the best methods to pick up skills in JavaScript. This helped me find websites that have clear details on Functions such as console.log, alert and document. write and where they are expressed on a real-life web page. Moving forward I will be using more online resources such as websites and even textbooks that demonstrate more complex ideas such as operators which will help me create my own project later on.   
+
+\subsection{Challenges and Difficulties}
+Whilst learning aspects of JavaScript there were many resources available to me such as YouTube tutorials, videos, academic guides, textbooks, etc., I did struggle at one point to identify what sources were the best to learn from since even though some resources were described as for beginners, they involved in-depth experience of coding in general maybe from another language such as Python, which I do not have. This challenge was often seen by websites that stated learning python beforehand I beneficial for JavaScript. However, I was able to overcome this issue by looking for more replacement resources and looking for keywords such as "New to Coding" and "Beginner in Coding", which helped target me by the ability of skills I had. Another difficulty I'm struggling with is how there are multiple ways to achieve the same outcome in coding. When inputting JavaScript into an HTML file there were 2 methods I came across in my research, such as importing the actual JS file or actually writing the JS code directly into the HTML file. I was able to rectify this issue by referring back to my demonstration component of Level A where I clarified that JavaScript is my main focus. As a result, the method I have used to code my JavaScript is by creating it in a separate file that I can later import.
+
+\subsection{Learning Sources}
+Sources used to develop my Knowledge. Includes multi-forms of resources I used to expand my understanding such as websites and videos.
+
+\begin{tabular}{|p{0.47\textwidth}|p{0.45\textwidth}|}
+	\hline
+	https://www.w3schools.com/js/ & Developed my understanding of basic levels and steps of JavaScript by working down the contents page to understand different concepts such as inputs and outputs using correct syntax  \\
+	\hline
+	https://www.simplilearn.com/applications-of-javascript-article & Helped clarify worldwide uses of JS and its applications in the real-world \\
+	\hline
+	https://developer.mozilla.org/en-US/docs/Web/API/Window/alert & Developed my interpretation on the alert() function in JavaScript and how it can be used to allow interaction with a user in a webpage\\
+	\hline
+	https://developer.mozilla.org/en-US/docs/Web/API/Console/log/ & Aided my research in understanding the function of Console.log() in JS and how it can be viewed in an HTML file via inspect -> console\\
+	\hline
+	https://www.youtube.com/@cemeygimedia & Helped me understand the contribution of HTML in representing a JS code file, and how it can be used to create webpages in an efficient manner.\\
+	\hline
+\end{tabular}
+
+\subsection{Application artifacts}
+I re-created my own version of a YouTube tutorial that I watched to understand the basic concepts of JavaScript and how it works in conjunction with HTML. I created an HTML template and a JS code file which I later imported to create an active web page which I viewed using the VS code extension of Live Server, where I demonstrated the functions of the console.log() to see its presence in the web page console. I also created an alert() to see how it interacts with a user once executed. Additionally, I completed my first code of "Hello World" using the document.write() function in JS, making it visible to a user in the web page.   
+
+
+%=============================================================================
+
+\newpage
+\section{Level B: Basic Application}
+
+Whilst level A is about doing something simple with the topic to just show that you have started to be able to use the tool or technology, level B is about doing something practical that might actually be useful.
+
+\subsection{Level B Demonstration}
+
+This is a short description of the application that you have developed in order to demonstration your understanding. (50-100 words).
+
+\subsection{Application artifacts}
+
+Include here a description of what you actually created (what does it do? How does it work? How did you create it?). Include any code or other related artefacts that you created (these should also be included in your github repository).
+
+If you do include screengrabs to show what you have done then these should be annotated to explain what it is showing and what the application does.
+
+
+%=============================================================================
+
+\newpage
+\section{Level C: Deeper Understanding}
+
+Level C focuses on showing that you have actually understood the tool or technology at a relatively advanced level. You will need to compare it to alternatives, identifying key strengths and weaknesses, and the areas where this tool is most effective. 
+
+\subsection{Strengths}
+What are the key strengths of the item you have learnt? (50-100 words)
+
+\subsection{Weaknesses}
+What are the key weaknesses of the item you have learnt? (50-100 words)
+
+\subsection{Usefulness}
+Describe one scenario under which you believe the topic you have learnt could be useful. (50-100 words)
+
+\subsection{Key Question 1}
+Note: This question is in the table in the ‘Self Learning: List of Topics’ page on Canvas. (50-100 words)
+
+\subsection{Key Question 2}
+Note: This question is in the table in the ‘Self Learning: List of Topics’ page on Canvas. (50-100 words)
+
+
+%=============================================================================
+
+\newpage
+\section{Level D: Evolution of skills}
+\vspace{5mm}
+\subsection{Level D Demonstration}
+
+This is a short description of the application that you have developed. (50-100 words).
+\textit{{\bf IMPORTANT:} You might wish to submit this as part of an earlier submission in order to obtain feedback as to whether this is likely to be acceptable for level D.}
+
+\subsection{Application artifacts}
+
+Include here a description of what you actually created (what does it do? How does it work? How did you create it?). Include any code or other related artefacts that you created (these should also be included in your github repository).
+
+If you do include screengrabs to show what you have done then these should be annotated to explain what it is showing and what the application does.
+
+\subsection{Alternative tools/technologies}
+Identify 2 alternative tools/technologies that can be used instead of the one you studied for your topic. (e.g. if your topic was Python, then you might identify Java and Golang)
+\subsection{Comparative Analysis}
+Describe situations in which both your topic and each of the identified alternatives would be preferred over the others (100-200 words).
+
+
+
+%=============================================================================
+
+\newpage
+
+\bibliographystyle{ieeetran}
+\bibliography{main}
+
+\end{document}
+\end{report}
